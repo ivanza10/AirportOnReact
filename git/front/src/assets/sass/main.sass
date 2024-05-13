@@ -1,0 +1,136 @@
+.h2_margin
+    text-align: center
+    margin-bottom: 3rem
+.second_section
+    height: auto
+    margin-bottom: 3rem
+.cards
+    align-items: center
+    display: grid
+    grid-template-columns: 40vw 40vw
+    grid-template-rows: 1fr 1fr
+    column-gap: 2.1rem
+    row-gap: 2.1rem
+.card
+    display: flex
+    width: 40vw
+    aspect-ratio: 1 / 0.55
+    background-size: cover
+    background-position: center
+    border-radius: 1.6rem
+    transition: transform 2s
+    align-items: flex-end
+    overflow: hidden
+    
+    &:hover
+        
+        transform: scale(1.05)
+        .header_btn
+            background: #f3d758
+        &:hover .header_low_btn_icon
+            fill: #32382e
+.card_1
+    background-image: url("../photo/uslugi_Kafe.webp")
+
+.card_2
+    background-image: url("../photo/uslugi_Shop.webp")
+
+.card_3
+    background-image: url("../photo/uslugi_VIP.webp")
+.header_btn
+    color: black
+    width: auto
+    height: 3rem
+    display: flex
+    border-radius: 0.9rem
+    background: rgb(248, 248, 250)
+    padding: 1rem 1rem
+    align-items: center
+    margin-bottom: 1.5rem
+    margin-left: 1rem
+    
+.third_section
+    height: auto
+    margin-bottom: 3rem
+
+.cards_info
+    overflow: hidden
+    display: grid
+    grid-template-columns: 15vw 15vw 15vw 15vw
+    grid-template-rows: 1fr
+    column-gap: 2rem
+    justify-content: center
+    &_card
+        display: flex
+        flex-direction: column
+        &:hover
+            .cards_info_card_img_text
+                color: #008ace
+        &_img
+            position: relative
+            width: 15vw
+            aspect-ratio: 1 / 1.25
+            border-radius: 7rem
+            margin-bottom: 1rem
+            &_text
+                text-align: center
+                color: #32382e
+
+.four_section
+    height: auto
+    margin-bottom: 3rem
+    & h2
+        margin-bottom: 2rem
+.cats
+    margin-bottom: 1.25rem
+    width: 50rem
+    height: 4rem
+    &__item
+        margin-right: 0.5rem
+        width: auto
+        height: 3rem
+        display: inline-block
+        padding: 0.625rem 1.25rem
+        background-color: #ecf0f1
+        text-align: center
+        line-height: 1.8rem
+        font-size: 1.2rem
+        font-weight: 700
+        cursor: pointer
+        transition: all .3s linear
+        border-radius: 0.3rem
+        &_active
+            background-color: #f3d54e
+    &__item:hover
+        background-color: #f3d54e
+        
+
+.second_slider
+    position: relative
+    margin-left: auto
+    margin-right: auto
+    width: auto
+    height: 50rem
+    &__img
+        position: absolute
+        text-align: center
+        left: 0
+        top: 0
+        width: auto
+        height: 50rem
+        overflow: hidden
+        display: none
+        &2
+            width: 100rem
+            height: 45rem
+        &3
+            padding-left: 10rem
+            width: 85rem
+            height: 50rem
+    &__img_active
+        display: block
+
+    &__img img
+        object-fit: cover
+        width: 100%
+        height: 100%

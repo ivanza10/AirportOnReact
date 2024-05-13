@@ -1,0 +1,111 @@
+header
+    position: relative
+    height: 40rem
+    margin-bottom: 3rem
+
+.header_second
+    height: 6.5rem
+    margin-bottom: 3rem
+    background: #38AED4
+.header_right
+    display: flex
+
+.header_hight
+    display: flex
+    height: 5rem
+    width: 85vw
+    align-items: center
+    justify-content: space-between
+    margin: 0 auto
+    margin-bottom: 2rem
+.header_left
+    &_photo
+        height: 4.4rem
+        width: 13.6rem
+.header_low
+    display: flex
+    width: auto
+    &_btn
+        color: black
+        display: flex
+        font-size: 1.15rem
+        width: 13.44rem
+        height: 7rem
+        border-radius: 0.9rem
+        transition-duration: .2s
+        background: rgb(248, 248, 250)
+        flex-direction: column
+        justify-content: space-around
+        padding: 1rem 1rem
+        &__right
+            margin-right: 0px
+            margin-left: auto
+        &_a
+            margin-right: 2rem
+        &:hover
+            background: #f3d758
+        &:hover .header_low_btn_icon
+            fill: #32382e
+        &__dark
+            background: #152233
+            color: white
+            &:hover
+                background: #002d72
+            &:hover .header_low_btn_icon
+                fill: #f3d758
+
+        &_icon
+            fill: #f3c90d
+            width: 2rem
+            padding-right: 0.2rem
+.buttons
+    display: flex
+    align-items: center
+    margin-right: 3rem
+    &_eye
+        display: flex
+        justify-content: center
+        margin-top: 1.3rem
+        margin-right: 1.5rem
+        opacity: 1
+        transition: opacity 0.3s ease
+        width: 2rem
+        border-radius: 0.8rem
+        &:hover
+            opacity: 0.5
+    &_acc
+        display: flex
+        justify-content: center
+        margin-top: 1.3rem
+        cursor: pointer
+        opacity: 1
+        transition: opacity 0.3s ease
+        width: 2rem
+        border-radius: 0.8rem
+        &:hover
+            opacity: 0.5
+    &_item
+        color: white
+
+        display: flex
+
+        width: 1.8rem
+        height: 2rem
+.font-size-popup
+    display: flex
+    align-items: center
+    margin-top: 1.3rem
+    background: #ccc
+    border-radius: 0.6rem
+    padding-left: 1rem
+.font-size-option
+    color: #9d9d9d
+    margin-right: 1rem
+    padding: 0.5rem 0.5rem
+    border-radius: 0.6rem
+    &:hover
+        background: rgb(243, 201, 13)
+        color: black
+    &_active
+        background: rgb(243, 201, 13)
+        color: black
